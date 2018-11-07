@@ -1,0 +1,117 @@
+.pokedex {
+    background: #d64936;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.content {
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    bottom: 10%;
+    right: 10%;
+    background: white;
+    padding: 8vh 8vh 15vh 12vh;
+    border-radius: 50px 50px 50px 150px;
+    height: 50vh;
+    width: 50vh;
+}
+
+.screen {
+    background-color: black;
+    background-image: radial-gradient( rgba(103, 121, 103, 0.75), black 120% );
+    height: 100%;
+    text-shadow: 0 0 5px white;
+    color: whitesmoke;
+    font: 1.3rem monospace;
+    border-radius: 50px;
+    border: 10px inset lightslategray;
+    padding-left: 5px;
+}
+
+.led {
+    background-color: black;
+    background-image: radial-gradient( green, black 120% );
+    position: absolute;
+    border-radius: 8px;
+    height: 15px;
+    width: 15px;
+    top: 15%;
+    left: 8%;
+}
+
+.blink {
+    background-image: radial-gradient( red, black 120% );
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-image: radial-gradient( black, black 120% );
+  }
+}
+
+img {
+    filter: grayscale(1);
+    width: 100%;
+}
+
+.like-area {
+    position: absolute;
+    bottom: 5%;
+    right: 12%;
+}
+
+input {
+    background: transparent;
+    border-bottom: 2px solid lightgrey;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 8px;
+    outline: none;
+    width: 95%;
+    margin-top: 75px;
+    text-shadow: 0 0 5px white;
+    color: whitesmoke;
+}
+
+::placeholder {
+   color: whitesmoke;
+   text-shadow: 0 0 5px white;
+}
+
+.home {
+    padding: 20px;
+}
+
+.home ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 45px;
+}
+
+.home li {
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 2);
+    height: 50px;
+}
+
+.home a, .home a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.home a:hover, .home a:focus {
+    color: white;
+    background: darkslategrey;
+    padding: 5px;
+}
